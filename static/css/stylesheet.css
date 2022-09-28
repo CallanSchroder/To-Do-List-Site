@@ -1,0 +1,14 @@
+.header{
+    padding: 30px;
+    text-align: center;
+    background: #abdbe3;
+    color: white;
+    font-size: 30px;
+}
+
+table, th, td {
+    border:1px solid;
+    width: 100%;
+    border-collapse: collapse;
+    align: center
+}

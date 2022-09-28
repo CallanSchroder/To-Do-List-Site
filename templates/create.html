@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<header class="masthead">
+    <center>
+    <div class="overlay"></div>
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Add a new task</h1>
+              <span class="subheading">get more done</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </center>
+  </header>
+<body>
+<center>
+<!--    {{ wtf.quick_form(form) }}-->
+
+     <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {{ ckeditor.load() }}
+        {{ ckeditor.config(name='body') }}
+        {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+       </div>
+    </div>
+  </div>
+
+</div>
+<!--{{ wtf.quick_form(form, novalidate=True,button_map={"submit": "primary"}) }}-->
+{% endblock %} ]
+    </center>
+</body>
+</html>
+
+
+
+
